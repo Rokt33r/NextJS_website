@@ -31,14 +31,15 @@ var PostLink = function PostLink(props) {
       fileName: _jsxFileName,
       lineNumber: 6
     }
-  }, _react2.default.createElement(_link2.default, { href: '/post?title=' + props.title, __source: {
+  }, _react2.default.createElement(_link2.default, {
+    as: '/p/' + props.id, href: '/post?title=' + props.title, __source: {
       fileName: _jsxFileName,
       lineNumber: 7
     }
   }, _react2.default.createElement('a', {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     }
   }, props.title)));
 };
@@ -47,29 +48,29 @@ exports.default = function () {
   return _react2.default.createElement(_MyLayout2.default, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     }
   }, _react2.default.createElement('h1', {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 16
     }
   }, 'My Blog'), _react2.default.createElement('ul', {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 17
     }
   }, _react2.default.createElement(PostLink, { title: 'Hello Next.js', __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 18
     }
   }), _react2.default.createElement(PostLink, { title: 'Learn Next.js', __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 19
     }
   }), _react2.default.createElement(PostLink, { title: 'Deploy apps with Zeit', __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 20
     }
   })));
 };
