@@ -21,7 +21,7 @@ const Index = (props) => (
 Index.getInitialProps = async function() {
   const res = await fetch('https://api.tvmaze.com/search/shows?q=batman')
   const data = await res.json()
-
+  // message only printed on the server
   console.log(`Show data fetched. Count: ${data.length}`)
 
   return {
