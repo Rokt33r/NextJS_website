@@ -1,12 +1,16 @@
 'use strict';
 
+var _react = require('react');
+
+var _react2 = _interopRequireDefault2(_react);
+
+function _interopRequireDefault2(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+var _jsxFileName = '/Users/jennybehan/hello-next/pages/about.js?entry';
 
-var _react = require('react');
-
-var _react2 = _interopRequireDefault(_react);
 
 var _link = require('next/dist/lib/link.js');
 
@@ -20,9 +24,9 @@ var _Layout = require('../comps/Layout');
 
 var _Layout2 = _interopRequireDefault(_Layout);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var _jsxFileName = '/Users/jennybehan/hello-next/pages/about.js?entry';
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 exports.default = function () {
   return _react2.default.createElement(_Layout2.default, {
@@ -47,3 +51,4 @@ exports.default = function () {
     }
   }, 'Basic Income Youth Network(BIYN) is a network of individuals and groups working together for the realization of basic income, primarily by the youth in general. Basic income is a cash payment given to all individuals without means tests or work requirements. BIYN is working to alert people about the need for basic income in Korea. We are also engaging in activities to let the youth (aged 0 to their 30\u2019s), who are suffering from the surmounting problems of the neoliberal economy, realize basic income firsthand, together.'));
 };
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL2Fib3V0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7O0FBQUE7Ozs7QUFDQTs7OztBQUNBOzs7Ozs7OztrQkFFZSxZQUFBO3lCQUNiLHVCQUFBOztnQkFBQTtrQkFBQSxBQUNFO0FBREY7QUFBQSxHQUFBLGtCQUNFLGNBQUE7O2dCQUFBO2tCQUFBO0FBQUE7QUFBQSxLQURGLEFBQ0UsQUFDQSwwQkFBQSxjQUFBOztnQkFBQTtrQkFBQTtBQUFBO0FBQUEsS0FGRixBQUVFLEFBQ0Esc25DQUFBLGNBQUE7O2dCQUFBO2tCQUFBO0FBQUE7QUFBQSxLQUpXLEFBQ2IsQUFHRTtBIiwiZmlsZSI6ImFib3V0LmpzP2VudHJ5Iiwic291cmNlUm9vdCI6Ii9Vc2Vycy9qZW5ueWJlaGFuL2hlbGxvLW5leHQifQ==

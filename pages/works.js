@@ -1,12 +1,6 @@
 import Link from 'next/link'
 import Layout from '../comps/Layout'
-
-import publyImage from '../assets/publy.jpeg'
-
-//Stateless function syntax
-// const List = function(children) {
-//   return (<ul>{children}</ul>)
-// }
+import publy from '../static/images/publy.jpeg'
 
 const listStyle = {
   listStyle: 'none',
@@ -21,17 +15,17 @@ const pageTitle = {
 const Items = [
   {
     id: 0,
-    image: 'publyImage',
+    image: 'publy',
     text: 'first'
   },
   {
     id: 1,
-    image: 'pubpubImage',
+    image: 'publy',
     text: 'second'
   },
   {
     id: 2,
-    image: 'publyImage',
+    image: 'publy',
     text: 'third'
   }
 ]
@@ -39,7 +33,8 @@ const Items = [
 const listItems = Items.map((item) => (
   <li key={item.id} style={listStyle}>
     <a>
-      <img src={`/assets/${item.image}`}/>
+      {/*<img src={$(require('../static/images/publy.jpeg'))}/>*/}
+      <img src={`/assets/${item.image}.jpeg`}/>
       {item.text}
     </a>
   </li>
