@@ -4,11 +4,25 @@ const linkStyle = {
   padding: 10,
   lineHeight: 1.2,
   textDecoration: 'none',
-  color: '#20b2aa'
+  color: '#20b2aa',
+  fontSize: '15px'
+}
+
+const headerStyle = {
+  width: '100%',
+  height: '40px',
+  padding: 20,
+  textAlign: 'center',
+  position: 'fixed',
+  top: 0,
+  left: 0,
+  zIndex: 1000,
+  backgroundColor: '#fff',
+  boxShadow: '0 0.3rem 0.3rem 0 rgba(0,0,0,0.1)'
 }
 
 const Header = () => (
-  <div>
+  <div style={headerStyle}>
     <Link href="/">
       <a style={linkStyle}>Home</a>
     </Link>

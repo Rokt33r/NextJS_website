@@ -1,7 +1,5 @@
 module.exports = {
   webpack: config => {
-    // handle images
-    // { loader: 'url-loader', options: { limit: 8192 } } ??
     config.module.rules.push({
       test: /\.(ico|gif|png|jpg|jpeg|svg|webp)$/,
       use: [
@@ -11,6 +9,12 @@ module.exports = {
             name: 'dist/[path][name].[ext]',
           },
         },
+        {
+           loader: 'url-loader',
+           options: {
+             limit: 25000,
+           },
+         },
         {
           loader: 'file-loader',
           options: {

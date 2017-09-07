@@ -18,9 +18,9 @@ var _jsxFileName = '/Users/jennybehan/hello-next/comps/Layout.js';
 
 
 var layoutStyle = {
-  margin: 20,
+  margin: '0 20',
   padding: 20,
-  border: '1px solid #DDD'
+  marginTop: '100px'
 };
 
 var Layout = function Layout(props) {

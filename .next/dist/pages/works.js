@@ -16,22 +16,36 @@ var _Layout = require('../comps/Layout');
 
 var _Layout2 = _interopRequireDefault(_Layout);
 
+var _publy = require('../assets/publy.jpeg');
+
+var _publy2 = _interopRequireDefault(_publy);
+
+var _pubpub = require('../assets/pubpub.jpg');
+
+var _pubpub2 = _interopRequireDefault(_pubpub);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _jsxFileName = '/Users/jennybehan/hello-next/pages/works.js?entry';
 
 
-//Stateless function syntax
-// const List = function(children) {
-//   return (<ul>{children}</ul>)
-// }
+var listStyle = {
+  listStyle: 'none',
+  display: 'block'
+};
+
+var pageTitle = {
+  margin: '0 auto',
+  textAlign: 'center'
+};
+
 var Items = [{
   id: 0,
   image: 'publyImage',
   text: 'first'
 }, {
   id: 1,
-  image: 'publyImage',
+  image: 'pubpubImage',
   text: 'second'
 }, {
   id: 2,
@@ -39,19 +53,19 @@ var Items = [{
   text: 'third'
 }];
 
-var List = Items.map(function (item) {
-  return _react2.default.createElement('li', { key: item.id, __source: {
+var listItems = Items.map(function (item) {
+  return _react2.default.createElement('li', { key: item.id, style: listStyle, __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 36
     }
   }, _react2.default.createElement('a', {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 37
     }
-  }, _react2.default.createElement('img', { src: '/assets/' + item.image + '.jpeg', __source: {
+  }, _react2.default.createElement('img', { src: '../assets/publy.jpeg', __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 38
     }
   }), item.text));
 });
@@ -60,54 +74,21 @@ exports.default = function () {
   return _react2.default.createElement(_Layout2.default, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 45
     }
-  }, _react2.default.createElement('h2', {
-    __source: {
+  }, _react2.default.createElement('h2', { style: pageTitle, __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 46
     }
   }, 'WORKS'), _react2.default.createElement('div', {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 47
     }
   }, _react2.default.createElement('ul', {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 48
     }
-  }, List)));
+  }, listItems)));
 };
-
-/*export default () => (
-  <Layout>
-    <h2>WORKS</h2>
-    <ul>
-      <li>
-        <a>Publy Report</a>
-      </li>
-    </ul>
-
-    <style jsx>{`
-          h1, a {
-            font-family: "Arial";
-          }
-          ul {
-            padding: 0;
-          }
-          li {
-            list-style: none;
-            width: 200px;
-            height: 150px;
-            background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
-          }
-          a {
-            text-decoration: none;
-          }
-          a:hover {
-            opacity: 0.7
-          }
-          `}</style>
-  </Layout>
-)*/
