@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import Layout from '../comps/Layout'
-import publy from '../static/images/publy.jpeg'
 
 const listStyle = {
   listStyle: 'none',
@@ -34,7 +33,7 @@ const listItems = Items.map((item) => (
   <li key={item.id} style={listStyle}>
     <a>
       {/*<img src={$(require('../static/images/publy.jpeg'))}/>*/}
-      <img src={`/assets/${item.image}.jpeg`}/>
+      <img src={`/static/images/${item.image}.jpeg`}/>
       {item.text}
     </a>
   </li>
