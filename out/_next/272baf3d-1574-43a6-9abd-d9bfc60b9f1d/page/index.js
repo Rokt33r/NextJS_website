@@ -1,0 +1,6 @@
+
+          window.__NEXT_REGISTER_PAGE('/', function() {
+            var comp = module.exports=webpackJsonp([5],{368:function(e,t,a){e.exports=a(369)},369:function(e,t,a){"use strict";function l(e){return e&&e.__esModule?e:{default:e}}function n(){return[{id:"hello-nextjs",title:"Hello Next.js"},{id:"learn-nextjs",title:"Learn Next.js is awesome"},{id:"deploy-nextjs",title:"Deploy apps with ZEIT"}]}Object.defineProperty(t,"__esModule",{value:!0});var u=a(184),d=l(u),r=a(6),o=l(r),s=a(115),i=l(s),f=a(117),c=l(f),p=function(e){var t=e.post;return o.default.createElement("li",{"data-jsx":779563849},o.default.createElement(i.default,{as:"/p/"+t.id,href:"/post?title="+t.title},o.default.createElement("a",{"data-jsx":779563849},t.title)),o.default.createElement(d.default,{styleId:779563849,css:'h1[data-jsx="779563849"],a[data-jsx="779563849"]{font-family:"Arial"}ul[data-jsx="779563849"]{padding:0}li[data-jsx="779563849"]{list-style:none;margin:5px 0}a[data-jsx="779563849"]{text-decoration:none;color:blue}a[data-jsx="779563849"]:hover{opacity:0.6}'}))};t.default=function(){return o.default.createElement(c.default,null,o.default.createElement("h1",null,"My Blog"),o.default.createElement("ul",null,n().map(function(e){return o.default.createElement(p,{key:e.id,post:e})})))}}},[368]);
+            return { page: comp.default }
+          })
+        

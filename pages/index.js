@@ -1,11 +1,10 @@
 import Link from 'next/link'
-import Layout from '../comps/MyLayout'
+import Layout from '../comps/Layout'
 
 function getPosts () {
   return [
-    { id: 'hello-nextjs', title: 'Hello Next.js' },
-    { id: 'learn-nextjs', title: 'Learn Next.js is awesome' },
-    { id: 'deploy-nextjs', title: 'Deploy apps with ZEIT' }
+    { id: 'First', title: 'First' },
+    { id: 'Second', title: 'Second' }
   ]
 }
 
@@ -29,7 +28,6 @@ const PostLink = ({ post }) => (
         text-decoration: none;
         color: blue;
       }
-
       a:hover {
         opacity: 0.6;
       }
@@ -39,7 +37,7 @@ const PostLink = ({ post }) => (
 
 export default () => (
   <Layout>
-    <h1>My Blog</h1>
+    <h1>BIYN</h1>
     <ul>
       {getPosts().map((post) => (
         <PostLink key={post.id} post={post} />

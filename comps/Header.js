@@ -1,7 +1,10 @@
 import Link from 'next/link'
 
 const linkStyle = {
-  marginRight: 15
+  padding: 10,
+  lineHeight: 1.2,
+  textDecoration: 'none',
+  color: '#20b2aa'
 }
 
 const Header = () => (
@@ -12,6 +15,20 @@ const Header = () => (
     <Link href="/about">
       <a style={linkStyle}>About</a>
     </Link>
+    <Link href="/works">
+      <a style={linkStyle}>Works</a>
+    </Link>
+    <Link href="/archive">
+      <a style={linkStyle}>Archive</a>
+    </Link>
+    <Link href="/contact">
+      <a style={linkStyle}>Contact</a>
+    </Link>
+    <style jsx>{`
+      a:hover {
+        color: white;
+      }
+      `}</style>
   </div>
 )
 
